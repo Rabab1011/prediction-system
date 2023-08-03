@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <nav class="nav1  ">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo text-warning">STEPS</label>
+      <ul class="element4 menu1">
+        <li><a  class="link1 " href="home.html">Home</a></li>
+        <li><a class="link1" href="products.html">products</a></li>
+        <li><a class="link1" href="tutorial.html">Tutorial</a></li>
+        <li><a class="link1" href="articles.html">Articles</a></li>
+        <li><a class="link1" href="home.html">About us</a></li>
+       
+        <li> <button type="button" class="btn btn-warning fs-5 element3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</button></li>
+      </ul>
+    </nav><!--end nav-->
+    
+
+    <h1 class="container h1">Enter your information</h1>
+   <!-- <h3 class="h3">Select your space</h3>-->
+ 
+   
+
+ 
+<section class="container ">
+  <div class="mapnote bg-warning">
+    <!-- <h3>note</h3> -->
+    <p><span>note: </span>
+      Determine the surface area by click on pan current location button  or write your location in search box to get the current location and select your roof on map or write your roof area direct in input
+    </p>
+  </div>
+</section>
+
+ <section class="container">
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk"></script>
+ 
+  
+<div id="map" class="map2"></div>
+ <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=drawing&v=weekly"
+  defer
+></script>
+<div id="panel">
+ <!-- <div id="color-palette"></div>-->
+  <div>
+    <button id="delete-button">Delete Selected Shape</button>
+    <button id="calculate" onClick="calcar()">calculate area</button>
+   <!--<div id="area"></div>--> 
+  
+  </div>
+</div>
+  </section>
+  
+  <section class="container sectioninputs">
+   <div class="row"> 
+    <div class="form-floating dinput1 col-sm ">
+      <input type="text" id="area" class="form-control" id="floatingInput" placeholder="Roof space">
+      <label for="floatingInput">Roof space</label>
+    </div>
+    <div class="form-floating dinput1 col-sm">
+      <input type="text"  class="form-control" id="space" id="floatingInput" placeholder="Roof space">
+      <label for="floatingInput">your location</label>
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="form-floating dinput1  col-sm">
+      <input type="text"  class="form-control" id="floatingInput" placeholder="Roof space">
+      <label for="floatingInput">Electricity coast</label>
+    </div>
+    <div class="form-floating dinput1 col-sm">
+      <input type="text"  class="form-control " id="floatingInput" placeholder="Roof space">
+      <label for="floatingInput">Elactricity consumption</label>
+    </div>
+  </div>
+
+  </section>
+ 
+ <!--end of inputs-->
+   
+   
+      
+     <div class="container" data-aos="zoom-in">
+  <h3 class=" elec">I use Electricity</h3>
+       <ul class="radio">
+         <li class="btnactive" data-cont1=".one" >
+           equally throughout the day
+         </li>
+         <li class="" data-cont1=".two" >
+           mostly during the morning
+         </li>
+         <li class="" data-cont1=".three" >
+           mostly during the evening
+         </li>
+       </ul>
+     </div><!--end radio bottons-->
+ 
+     
+     <div class="container">
+ <h3 class="elec">Results</h3>
+       <ul class="results tabs2">
+         <li class="active3" data-cont2=".suitable">
+           suitable for you
+         </li>
+         <li class="" data-cont2=".best">
+          best you can get from your space
+         </li>
+         
+       </ul>
+     </div><!--end tab results-->
+     <div class="container dcontent">
+   <div class="suitable">
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">Cell type: 2365</div>
+       
+     </div>
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">install type: </div>
+     </div>
+     
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">space required: </div>
+     </div>
+     
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">Panels count: </div>
+     </div> 
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">average energy prediction per month: </div>
+     </div> 
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">average energy prediction per day: </div>
+     </div> 
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">cost: </div>
+     </div> 
+   </div> <!--end suitable-->
+   <div class="best">
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">Cell type: </div>
+       
+     </div>
+     <div class="">
+       <div class="dcell3" data-aos="zoom-in">install type: </div>
+     </div>
+     
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">space required: </div>
+     </div>
+     
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">Panels count: </div>
+     </div> 
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">average energy prediction per month: </div>
+     </div> 
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">average energy prediction per day: </div>
+     </div> 
+     <div class=" ">
+       <div class="dcell3" data-aos="zoom-in">cost: </div>
+     </div> 
+   </div> <!--end best-->
+ 
+ </div><!--end od dcontent-->
+ 
+ 
+ <div class="container bat">
+   <h3 class="elec">Your need from battery</h3>
+   <div class="">
+     <div class="dcell3" data-aos="zoom-in">Total Ampere: </div>
+   </div> 
+   <div class=" ">
+     <div class="dcell3" data-aos="zoom-in">battery capacity: </div>
+   </div> 
+   <div class=" ">
+     <div class="dcell3" data-aos="zoom-in">Total number of battery: </div>
+   </div> 
+   <div class=" ">
+     <div class="dcell3" data-aos="zoom-in">cost: </div>
+   </div> 
+ </div>
+ <section class="container">
+ <section class=" total" data-aos="zoom-in">
+   <div>
+     <span>Total cost is </span>
+     <span class="spanp">0$</span>
+   </div>
+   <div>
+     <span>Advance </span>
+     <span class="spanp">0$</span>
+     <span class="spanp">Installment </span>
+     <span class="spanp">0$</span>
+   </div>
+ 
+ </section>
+ 
+ <p class="note">* install Cost and Taxes has included</p>
+ </section>
+
+ <section class="container investsec " data-aos="zoom-in">
+  <div> 
+    <p>Return of investment <span>5 Years</span></p>
+  </div>
+  <div>
+    <p>You will save up to 50% of your electric bill  for 10 years</p>
+  </div>
+ </section>
+
+
+
+
+
+
+ <footer class="footer"><!--footer-->
+  <section class="container-fluid row"> 
+      <div class="col-sm">
+   <div class="dfooter1 ">
+     <h1 class="text-warning">STEPS</h1>
+     <p>subscribe to get latest news about our products and services</p>
+     <div class="inputfoo">
+      <ul> <li> 
+     <input type="email" class="form-control inpfooter" id="email" placeholder="email"></li>
+    <li> <input class="submit inputsubmit bg-warning" type="submit" value="subscribe"></li>
+     </ul>
+    </div>
+     <div class="iconfooter">
+     <a href=""> <i class="fa-brands fa-facebook"></i></a>
+     <a href=""><i class="fa-brands fa-twitter"></i></a>
+     <a href=""><i class="fa-brands fa-instagram"></i></a>
+     <a href=""><i class="fa-brands fa-youtube"></i></a>
+     </div>
+   </div>
+   </div>
+   <div class="dfooter2 col-sm">
+      <div class="row">
+      <div class="col">
+          <div>
+          <ul>
+              <li><a href="#">products</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Term and conditions</a></li>
+              
+          </ul>
+          </div>
+         
+      </div>
+    <div class=" col">
+      <ul>
+      <li> <a href="#">log in</a></li>
+      <li><a href="#">sign up</a></li>
+     <li><a href="#">Contact</a></li>
+     </ul>
+    </div>
+    </div>
+    <div class="lastlink"> <a href="#" ><i class="fa-solid fa-location-dot text-warning  fs-3 "></i>  Egypt,Mansoura city</a></div>
+      </div>
+      
+    
+    
+   
+<section class="Copyright">
+    <a href="#" class="text-center">Copyright ⓒ2023 All rights reserved</a>
+  </section>
+   
+     
+  </section>
+ 
+ </footer>
+            <!--end footer-->
+
+
+
+ 
+    
+ <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js" > </script>
+  </body>
+</html>
